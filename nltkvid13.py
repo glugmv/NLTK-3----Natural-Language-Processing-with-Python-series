@@ -1,6 +1,8 @@
 import nltk
 import random
 from nltk.corpus import movie_reviews
+from ntl.corpus import stop_words
+
 
 documents = [(list(movie_reviews.words(fileid)), category)
              for category in movie_reviews.categories()
